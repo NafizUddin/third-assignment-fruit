@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Brust</title>
+    <title>Fruit Burst</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/79d93fa26b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisyUI link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -19,25 +31,35 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              prime: "#F85559",
             },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="lato">
     <header>
       <!-- navbar section -->
-      <div class="navbar bg-red-700">
+      <div class="navbar lg:bg-prime rounded-[600px] my-8 w-11/12 mx-auto">
         <div class="navbar-start">
-          <a class="btn btn-ghost normal-case text-xl lg:hidden">daisyUI</a>
+          <!-- <a class="btn btn-ghost normal-case text-xl lg:hidden">daisyUI</a> -->
+          <div class="flex gap-2 items-center lg:hidden">
+            <img src="./images/logo.png" alt="" class="w-[27px]" />
+            <h1 class="text-[#121212] font-bold text-2xl">Fruit Burst</h1>
+          </div>
           <ul class="menu menu-horizontal px-1 hidden lg:flex">
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+            <li><a class="text-white text-lg font-medium">Home</a></li>
+            <li><a class="text-white text-lg font-medium">About Us</a></li>
+            <li><a class="text-white text-lg font-medium">Shop</a></li>
+            <li><a class="text-white text-lg font-medium">All Fruits</a></li>
           </ul>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <div class="flex gap-2 items-center">
+            <img src="./images/logo.png" alt="" />
+            <h1 class="text-white font-bold text-4xl">Fruit Burst</h1>
+          </div>
         </div>
 
         <div class="navbar-end">
@@ -60,15 +82,141 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-14"
+              class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box"
             >
-              <li><a>Item 1</a></li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <a class="btn hidden lg:flex">Button</a>
+          <!-- <a class="btn hidden lg:flex">Button</a> -->
+          <div class="hidden lg:flex">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Search here"
+              class="hidden lg:flex rounded-[50px] py-4 px-7 my-6 mr-12 relative"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass fa-xl absolute top-[92px] right-[135px]"
+              style="color: #000000"
+            ></i>
+          </div>
         </div>
       </div>
+
+      <!-- banner section -->
+      <section class="md:container md:mx-auto my-8 text-center space-y-4">
+        <div class="carousel w-11/12 mx-auto back-img h-[400px] md:h-[500px]">
+          <!-- Slide 1 -->
+          <div
+            id="slide1"
+            class="carousel-item carousel-image relative w-full back-img-1"
+          >
+            <div class="flex flex-col w-full items-center">
+              <h1
+                class="text-white lato text-4xl md:text-5xl lg:text-7xl font-extrabold pt-8 md:pt-16 md:w-[660px] mx-auto"
+              >
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white text-xl my-7">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-prime text-xl font-extrabold text-white py-5 px-7 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item carousel-image relative w-full back-img-2"
+          >
+            <div class="flex flex-col w-full items-center">
+              <h1
+                class="text-white lato text-4xl md:text-5xl lg:text-7xl font-extrabold pt-8 md:pt-16 md:w-[660px] mx-auto"
+              >
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white text-xl my-7">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-prime text-xl font-extrabold text-white py-5 px-7 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item carousel-image relative w-full back-img-3"
+          >
+            <div class="flex flex-col w-full items-center">
+              <h1
+                class="text-white lato text-4xl md:text-5xl lg:text-7xl font-extrabold pt-8 md:pt-16 md:w-[660px] mx-auto"
+              >
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white text-xl my-7">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-prime text-xl font-extrabold text-white py-5 px-7 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item carousel-image relative w-full back-img-4"
+          >
+            <div class="flex flex-col w-full items-center">
+              <h1
+                class="text-white lato text-4xl md:text-5xl lg:text-7xl font-extrabold pt-8 md:pt-16 md:w-[660px] mx-auto"
+              >
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white text-xl my-7">
+                We supply highly quality organic products
+              </p>
+              <button
+                class="bg-prime text-xl font-extrabold text-white py-5 px-7 rounded-lg"
+              >
+                Shop Now
+              </button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>

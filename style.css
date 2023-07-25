@@ -1,0 +1,37 @@
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.back-img-1 {
+    background: url('./images/banner1.png');
+    background-color: rgba(0, 0, 0, 0.405);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
+.back-img-2 {
+    background: url('./images/banner2.png');
+    background-color: rgba(0, 0, 0, 0.405);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
+.back-img-3 {
+    background: url('./images/banner3.png');
+    background-color: rgba(0, 0, 0, 0.405);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
+.back-img-4 {
+    background: url('./images/banner4.png');
+    background-color: rgba(0, 0, 0, 0.405);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
+.carousel-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
