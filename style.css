@@ -35,3 +35,13 @@
     background-size: cover;
     background-position: center;
 }
+
+.meet-img {
+    background: url('./images/banner1.png');
+    background-color: rgba(0, 0, 0, 0.603);
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
